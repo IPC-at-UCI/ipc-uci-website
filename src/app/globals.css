@@ -3,21 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ipc-blue: #103057;
+  --ipc-yellow: #FFD700;
+  --ipc-white: #FBFCF8;
+  --ipc-gray: #777B7E;
+  --ipc-black: #181818;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-redhat-sans), Helvetica, Arial;
 }
 
 @layer utilities {

@@ -9,8 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "ipc-blue": "#103057",
+        "ipc-yellow": "#FFD700",
+        "ipc-white": "#FBFCF8",
+        "ipc-gray": "#777B7E",
+        "ipc-black": "#181818",
       },
     },
   },
