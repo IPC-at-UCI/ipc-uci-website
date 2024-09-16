@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="7zK-ZXprjxynfM0BXzevoU7Lcl6yEE1CvdTc-qmFJnY" />
+      </head>
       <body
         className={`${redHatDisplay.variable} antialiased`}
       >
