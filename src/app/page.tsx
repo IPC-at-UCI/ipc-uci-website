@@ -165,7 +165,7 @@ export default function Home() {
           <div className="flex justify-center">
             <Link
               href="#"
-              className="text-[1.4rem] text-lg text-ipc-black bg-ipc-yellow rounded-full py-4 px-7 flex items-center gap-2 justify-center hover:bg-yellow-500"
+              className="text-[1.4rem] text-xl text-ipc-black bg-ipc-yellow rounded-full py-4 px-7 flex items-center gap-2 justify-center hover:bg-yellow-500 duration-200"
             >
               <DiscordLogoIcon className="w-6 h-6" />
               Join our community

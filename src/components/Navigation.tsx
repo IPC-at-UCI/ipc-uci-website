@@ -46,10 +46,10 @@ export default function Navigation() {
         </div>
 
         <div className="flex items-center">
-          <ContactIcon Icon={DiscordLogoIcon} size={5} />
-          <ContactIcon Icon={InstagramLogoIcon} size={5} />
-          <ContactIcon Icon={EnvelopeClosedIcon} size={5} />
-          <ContactIcon Icon={GitHubLogoIcon} size={5} />
+          <ContactIcon Icon={DiscordLogoIcon} />
+          <ContactIcon Icon={InstagramLogoIcon} />
+          <ContactIcon Icon={EnvelopeClosedIcon} />
+          <ContactIcon Icon={GitHubLogoIcon} />
         </div>
       </div>
     </div>
