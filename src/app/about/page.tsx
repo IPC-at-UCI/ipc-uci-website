@@ -1,11 +1,17 @@
-import Link from "next/link"
+import Link from "next/link";
+import Navigation from "@/components/Navigation";
+import Section from "@/components/Section";
+
+import rightCircuit from "@/app/_images/right-circuit.png"
+import leftCircuit from "@/app/_images/left-circuit.png"
 
 export default function Page() {
-    return (
-        <div className="w-screen h-screen bg-ipc-blue flex flex-col items-center justify-center text-ipc-white text-2xl">
-            <div className="font-bold text-6xl mb-8">This page is under construction!</div>
-            <div className="mb-4">IPC is working hard behind the scenes to deliver this page. Check back for updates soon!</div>
-            <Link href="/" className="font-bold text-ipc-yellow hover:underline underline-offset-4">Return home</Link>
-        </div>
-    )
+  return (
+    <div className="overflow-x-hidden">
+      <Navigation />
+      <Section className="bg-ipc-blue">
+        
+      </Section>
+    </div>
+  );
 }
