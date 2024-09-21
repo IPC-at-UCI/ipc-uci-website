@@ -15,9 +15,10 @@ import halfGear from "@/app/_images/half-gear.png";
 import gear from "@/app/_images/gear.png";
 import beams from "@/app/_images/beams.png";
 import img1 from "@/app/_images/img1.jpg";
-import img2 from "@/app/_images/img2.jpg";
-import img3 from "@/app/_images/img3.jpg";
-import img4 from "@/app/_images/img4.jpg";
+import img2 from "@/app/_data/event-images/img2.jpg";
+import img3 from "@/app/_data/event-images/img3.jpg";
+import img4 from "@/app/_data/event-images/img4.jpg";
+
 
 import { DiscordLogoIcon } from "@radix-ui/react-icons";
 
