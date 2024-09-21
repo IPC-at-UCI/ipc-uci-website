@@ -1,11 +1,6 @@
-const DISCORD_INVITE_LINK = "https://discord.gg/6TQvTdQTmF";
-const INSTAGRAM_LINK = "https://www.instagram.com/ipcuci/";
-const GITHUB_LINK = "https://github.com/IPC-at-UCI";
-const IPC_EMAIL = "ipc.ucirvine@gmail.com";
+export const DISCORD_INVITE_LINK: string = "https://discord.gg/6TQvTdQTmF";
+export const INSTAGRAM_LINK: string = "https://www.instagram.com/ipcuci/";
+export const GITHUB_LINK: string = "https://github.com/IPC-at-UCI";
+export const IPC_EMAIL: string = "ipc.ucirvine@gmail.com";
 
-export default {
-  DISCORD_INVITE_LINK,
-  INSTAGRAM_LINK,
-  GITHUB_LINK,
-  IPC_EMAIL,
-};
+export const LINKTREE_LINK: string = "https://linktr.ee/ipcuci";

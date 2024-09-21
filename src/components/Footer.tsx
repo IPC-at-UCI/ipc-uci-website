@@ -3,7 +3,9 @@ import Link from "next/link";
 
 import logo from "@/app/_images/logo.png";
 
-import ContactIcon from "./ContactIcon"
+import ContactIcon from "./ContactIcon";
+
+import { IPC_EMAIL } from "@/app/_data/links";
 
 import {
   InstagramLogoIcon,
@@ -76,7 +78,7 @@ export default function Footer() {
               >
                 Contact us
               </Link>
-              <div className="">ipc.ucirvine@gmail.com</div>
+              <div className="">{IPC_EMAIL}</div>
               <div className="flex items-center">
                 <ContactIcon Icon={DiscordLogoIcon} />
                 <ContactIcon Icon={InstagramLogoIcon} />

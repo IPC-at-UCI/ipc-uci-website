@@ -19,6 +19,7 @@ import img2 from "@/app/_data/event-images/img2.jpg";
 import img3 from "@/app/_data/event-images/img3.jpg";
 import img4 from "@/app/_data/event-images/img4.jpg";
 
+import { DISCORD_INVITE_LINK, LINKTREE_LINK } from "./_data/links";
 
 import { DiscordLogoIcon } from "@radix-ui/react-icons";
 
@@ -52,7 +53,7 @@ export default function Home() {
         draggable={false}
       />
 
-      <Section className="relative bg-ipc-gray">
+      <Section className="relative bg-ipc-black flex justify-center h-[950px] overflow-hidden">
         <div className="absolute z-50 flex w-full h-full justify-center items-center gap-[50px]">
           <div>
             <Image
@@ -67,14 +68,24 @@ export default function Home() {
             <div className="flex gap-4">
               <button className="mt-4 px-6 py-3 bg-ipc-white flex text-ipc-gray items-center gap-2 rounded-full hover:bg-gray-300 duration-200">
                 <DiscordLogoIcon className="w-6 h-6" />
-                <Link href="#" className=" text-xl rounded-[50px]">
+                <a
+                  href={DISCORD_INVITE_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" text-xl rounded-[50px]"
+                >
                   Get Involved!
-                </Link>
+                </a>
               </button>
               <button className="mt-4 px-6 py-3 bg-ipc-gray flex text-ipc-white items-center gap-2 rounded-full hover:bg-gray-500 duration-200">
-                <Link href="#" className=" text-xl rounded-[50px]">
-                  Linktree
-                </Link>
+                <a
+                  href={LINKTREE_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl rounded-[50px]"
+                >
+                  LinkTree
+                </a>
               </button>
             </div>
           </div>
@@ -83,7 +94,7 @@ export default function Home() {
         <Image
           src={bg1}
           alt="IPC Club Meeting"
-          className="object-cover h-[950px] brightness-50 saturate-50"
+          className="object-cover min-h-[950px] w-screen brightness-50 saturate-50 "
         />
       </Section>
 
@@ -110,7 +121,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <Image src={img1} alt="IPC meeting" className="w-[400px]" />
+            <Image src={img1} alt="IPC meeting" className="w-[400px] " />
           </div>
         </div>
       </Section>
@@ -153,9 +164,21 @@ export default function Home() {
       <Section className="h-[1000px] bg-ipc-black flex justify-center items-center">
         <div>
           <div className="relative">
-            <Image src={gear} alt="Gear display" className="absolute -left-16 -top-36 " />
-            <Image src={gear} alt="Gear display" className="absolute -left-44 -top-12 w-[85px] h-[85px]" />
-            <Image src={gear} alt="Gear display" className="absolute -right-24 -bottom-12 w-[80px] h-[80px]" />
+            <Image
+              src={gear}
+              alt="Gear display"
+              className="absolute -left-16 -top-36 "
+            />
+            <Image
+              src={gear}
+              alt="Gear display"
+              className="absolute -left-44 -top-12 w-[85px] h-[85px]"
+            />
+            <Image
+              src={gear}
+              alt="Gear display"
+              className="absolute -right-24 -bottom-12 w-[80px] h-[80px]"
+            />
             <div className="text-ipc-white text-7xl text-center font-bold leading-snug mb-[60px]">
               Don't miss out, get
               <br />
@@ -164,13 +187,15 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center">
-            <Link
-              href="#"
+            <a
+              href={DISCORD_INVITE_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[1.4rem] text-xl text-ipc-black bg-ipc-yellow rounded-full py-4 px-7 flex items-center gap-2 justify-center hover:bg-yellow-500 duration-200"
             >
               <DiscordLogoIcon className="w-6 h-6" />
               Join our community
-            </Link>
+            </a>
           </div>
         </div>
       </Section>

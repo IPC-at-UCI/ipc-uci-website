@@ -24,7 +24,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="7zK-ZXprjxynfM0BXzevoU7Lcl6yEE1CvdTc-qmFJnY" />
       </head>
       <body
-        className={`${redHatDisplay.variable} antialiased`}
+        className={`${redHatDisplay.variable} bg-ipc-blue antialiased`}
       >
         {children}
       </body>

@@ -11,6 +11,8 @@ import leftCircuit from "@/app/_images/left-circuit.png";
 
 import { EnvelopeClosedIcon, DiscordLogoIcon, InstagramLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 
+import { IPC_EMAIL } from "@/app/_data/links"
+
 export default function Page() {
   return (
     <div>
@@ -41,7 +43,7 @@ export default function Page() {
               className="flex items-center px-7 py-4 bg-ipc-white text-ipc-gray gap-3 rounded-full hover:bg-gray-200 duration-200 w-fit"
             >
               <EnvelopeClosedIcon className="w-7 h-7" />
-              <div className="text-2xl">ipc.ucirvine@gmail.com</div>
+              <div className="text-2xl">{IPC_EMAIL}</div>
             </Link>
           </div>
 
