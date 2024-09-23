@@ -80,10 +80,10 @@ export default function Footer() {
               </Link>
               <div className="">{IPC_EMAIL}</div>
               <div className="flex items-center">
-                <ContactIcon Icon={DiscordLogoIcon} />
-                <ContactIcon Icon={InstagramLogoIcon} />
-                <ContactIcon Icon={EnvelopeClosedIcon} />
-                <ContactIcon Icon={GitHubLogoIcon} />
+                <ContactIcon Icon={DiscordLogoIcon} className="w-5 h-5" />
+                <ContactIcon Icon={InstagramLogoIcon} className="w-5 h-5" />
+                <ContactIcon Icon={EnvelopeClosedIcon} className="w-5 h-5" />
+                <ContactIcon Icon={GitHubLogoIcon} className="w-5 h-5" />
               </div>
             </div>
           </div>

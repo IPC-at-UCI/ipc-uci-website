@@ -10,7 +10,7 @@ export interface EventObject {
   location: string;
   date: Date;
   description: string[];
-  images?: StaticImport[];
+  images: StaticImport[];
 }
 
 export const EVENT_DATA: EventObject[] = [
