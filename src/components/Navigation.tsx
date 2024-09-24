@@ -11,6 +11,7 @@ import {
   GitHubLogoIcon,
   EnvelopeClosedIcon,
 } from "@radix-ui/react-icons";
+import { DISCORD_INVITE_LINK, GITHUB_LINK, INSTAGRAM_LINK, IPC_EMAIL } from "@/app/_data/links";
 
 function NavItem({
   children,
@@ -46,10 +47,10 @@ export default function Navigation() {
         </div>
 
         <div className="flex items-center">
-          <ContactIcon Icon={DiscordLogoIcon} className="w-5 h-5" />
-          <ContactIcon Icon={InstagramLogoIcon} className="w-5 h-5" />
-          <ContactIcon Icon={EnvelopeClosedIcon} className="w-5 h-5" />
-          <ContactIcon Icon={GitHubLogoIcon} className="w-5 h-5" />
+          <ContactIcon Icon={DiscordLogoIcon} href={DISCORD_INVITE_LINK} className="w-5 h-5" />
+          <ContactIcon Icon={InstagramLogoIcon} href={INSTAGRAM_LINK} className="w-5 h-5" />
+          <ContactIcon Icon={EnvelopeClosedIcon} href={IPC_EMAIL} className="w-5 h-5" />
+          <ContactIcon Icon={GitHubLogoIcon} href={GITHUB_LINK} className="w-5 h-5" />
         </div>
       </div>
     </div>

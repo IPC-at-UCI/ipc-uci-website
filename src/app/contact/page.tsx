@@ -9,9 +9,9 @@ import ContactIcon from "@/components/ContactIcon";
 import rightCircuit from "@/app/_images/right-circuit.png";
 import leftCircuit from "@/app/_images/left-circuit.png";
 
-import { EnvelopeClosedIcon, DiscordLogoIcon, InstagramLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { DISCORD_INVITE_LINK, INSTAGRAM_LINK, GITHUB_LINK, IPC_EMAIL } from "@/app/_data/links";
 
-import { IPC_EMAIL } from "@/app/_data/links"
+import { EnvelopeClosedIcon, DiscordLogoIcon, InstagramLogoIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export default function Page() {
   return (
@@ -48,10 +48,10 @@ export default function Page() {
           </div>
 
           <div className="flex items-center gap-3 justify-center">
-            <ContactIcon Icon={DiscordLogoIcon} className="w-10 h-10" />
-            <ContactIcon Icon={InstagramLogoIcon} className="w-10 h-10" />
-            <ContactIcon Icon={EnvelopeClosedIcon} className="w-10 h-10" />
-            <ContactIcon Icon={GitHubLogoIcon} className="w-10 h-10" />
+            <ContactIcon Icon={DiscordLogoIcon} href={DISCORD_INVITE_LINK} className="w-10 h-10" />
+            <ContactIcon Icon={InstagramLogoIcon} href={INSTAGRAM_LINK} className="w-10 h-10" />
+            <ContactIcon Icon={EnvelopeClosedIcon} href={IPC_EMAIL} className="w-10 h-10" />
+            <ContactIcon Icon={GitHubLogoIcon} href={GITHUB_LINK} className="w-10 h-10" />
           </div>
         </div>
       </Section>

@@ -28,9 +28,10 @@ export default function Page() {
           <div className="text-center text-7xl font-bold text-ipc-yellow mb-[60px]">
             Discover Events
           </div>
-          <div className="flex gap-[40px]">
+          <div className="flex gap-[40px] mx-8">
             <EventThumbnail eventData={EVENT_DATA[0]} href="#event-1"/>
             <EventThumbnail eventData={EVENT_DATA[1]} href="#event-2"/>
+            <EventThumbnail eventData={EVENT_DATA[2]} href="#event-3"/>
           </div>
         </div>
       </Section>
@@ -66,7 +67,7 @@ export default function Page() {
                     <div className="flex flex-col gap-3">
                       {event.description.map(
                         (paragraph: string, key: number) => (
-                          <p className="leading-snug" key={key}>
+                          <p className="leading-snug text-2xl" key={key}>
                             {paragraph}
                           </p>
                         )
