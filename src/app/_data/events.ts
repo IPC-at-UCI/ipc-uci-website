@@ -1,10 +1,12 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-import img2 from "./event-images/img2.jpg";
+import ectfImg from "./event-images/ectf.png"
+import logo from "./event-images/logo.png"
 import img3 from "./event-images/img3.jpg";
-import img4 from "./event-images/img4.jpg";
+import img5 from "./event-images/img3.jpg";
 
 export interface EventObject {
+  id: string;
   title: string;
   buildingName: string;
   location: string;
@@ -14,26 +16,40 @@ export interface EventObject {
 }
 
 export const EVENT_DATA: EventObject[] = [
+  
   {
-    title: "2025 IPC APEX Expo",
-    buildingName: "Anaheim Convention Center",
-    location: "Anaheim, CA",
-    date: new Date("2025-04-06"),
+    id: "event-1",
+    title: "Club Info Session",
+    buildingName: "HH 143",
+    location: "UC Irvine",
+    date: new Date("2024-09-30"),
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta scelerisque quam ac hendrerit. Nullam blandit dolor ante, ac venenatis dui elementum volutpat. Aenean malesuada justo vel magna finibus accumsan. Aenean tincidunt bibendum urna at vulputate. Aliquam commodo, lacus et imperdiet tristique, massa tortor gravida velit, eget volutpat nibh augue sed neque. Vivamus convallis urna ac magna tempor eleifend. Nunc ante massa, lacinia sed metus consequat, vehicula sodales est. Nullam maximus consequat varius.",
-      "Pellentesque posuere, felis dapibus ultricies eleifend, mauris sapien tristique dolor, quis vehicula elit eros id ipsum. Duis auctor nec neque ultrices accumsan. Vivamus commodo, purus vitae scelerisque suscipit, massa leo imperdiet massa, et ultricies lectus tortor sed felis. Proin a lacus vel lorem vestibulum gravida sollicitudin a erat. Curabitur euismod nibh et nibh faucibus egestas. Proin ac venenatis tellus. Etiam vestibulum suscipit est et posuere. Curabitur scelerisque sapien libero, vitae bibendum lacus porta posuere. In sed libero nisl. Nulla tristique sapien non est sagittis tempor. Etiam cursus pulvinar lorem, sit amet fermentum enim hendrerit in.",
+      "Come join us for IPC at UCI's first club information session! Learn more about our club, including details regarding the fall schedule, upcoming events, and how you can get involved with our activities.",
+      "Free pizza and snacks provided!",
     ],
-    images: [img2, img3, img4, img2, img3, img4],
+    images: [logo],
   },
   {
-    title: "2025 IPC APEX Expo",
-    buildingName: "Anaheim Convention Center",
-    location: "Anaheim, CA",
-    date: new Date("2024-04-06"),
+    id: "event-2",
+    title: "Intro to eCTF",
+    buildingName: "TBD",
+    location: "UC Irvine",
+    date: new Date("2024-10-04"),
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta scelerisque quam ac hendrerit. Nullam blandit dolor ante, ac venenatis dui elementum volutpat. Aenean malesuada justo vel magna finibus accumsan. Aenean tincidunt bibendum urna at vulputate. Aliquam commodo, lacus et imperdiet tristique, massa tortor gravida velit, eget volutpat nibh augue sed neque. Vivamus convallis urna ac magna tempor eleifend. Nunc ante massa, lacinia sed metus consequat, vehicula sodales est. Nullam maximus consequat varius.",
-      "Pellentesque posuere, felis dapibus ultricies eleifend, mauris sapien tristique dolor, quis vehicula elit eros id ipsum. Duis auctor nec neque ultrices accumsan. Vivamus commodo, purus vitae scelerisque suscipit, massa leo imperdiet massa, et ultricies lectus tortor sed felis. Proin a lacus vel lorem vestibulum gravida sollicitudin a erat. Curabitur euismod nibh et nibh faucibus egestas. Proin ac venenatis tellus. Etiam vestibulum suscipit est et posuere. Curabitur scelerisque sapien libero, vitae bibendum lacus porta posuere. In sed libero nisl. Nulla tristique sapien non est sagittis tempor. Etiam cursus pulvinar lorem, sit amet fermentum enim hendrerit in.",
+      "This session will introduce IPC's involvement in this year's eCTF competition (embedded Capture the Flag).",
     ],
-    images: [img4],
+    images: [ectfImg]
+  },
+  {
+    id: "event-3",
+    title: "2023 IPC APEX Expo",
+    buildingName: "San Diego Convention Center",
+    location: "San Diego, CA",
+    date: new Date("2023-01-21"),
+    description: [
+      "IPC APEX EXPO is the premier event for the electronics manufacturing industry. From the industry’s leading technical conference and professional development courses to the innovation-driven exhibit floor, IPC APEX EXPO 2023 will provide you with the opportunity to transform, modernize, discover what is new and next, while collaborating with your peers at North America’s largest gathering of electronics manufacturing professionals.",
+      "Join us for next year's IPC APEX Expo!"
+    ],
+    images: [img3, img5],
   },
 ];
