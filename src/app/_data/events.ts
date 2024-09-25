@@ -3,7 +3,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import ectfImg from "./event-images/ectf.png";
 import logo from "./event-images/logo.png";
 import img3 from "./event-images/img3.jpg";
-import img5 from "./event-images/img3.jpg";
+import img5 from "./event-images/img5.jpg";
 import pcbImg from "./event-images/pcb.jpeg";
 
 export interface EventObject {
@@ -32,7 +32,7 @@ export const EVENT_DATA: EventObject[] = [
   },
   {
     id: "event-2",
-    title: "eCTF challenge intro meeting",
+    title: "eCTF Challenge Intro Meeting",
     buildingName: "DBH 1300",
     location: "UC Irvine",
     date: new Date("2024-10-04"),
